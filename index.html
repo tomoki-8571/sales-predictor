@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>売上予測アプリ</title>
+</head>
+<body>
+    <h2>売上予測アプリ</h2>
+
+    <p><strong>【使用方法】</strong></p>
+    <ul>
+        <li>CSVファイルは <code>Date</code> と <code>Sales</code> の2列で構成してください。</li>
+        <li><code>Date</code> は日付（例：2023-05-01）、<code>Sales</code> は売上（数値）です。</li>
+        <li>予測したい期間を選択したうえで、「予測開始」ボタンを押してください。</li>
+    </ul>
+
+    <form action="/predict" method="post" enctype="multipart/form-data">
+        <label>CSVファイルを選択：</label>
+        <input type="file" name="file" required><br><br>
+
+        <label>予測したい期間を選んでください：</label><br>
+        <select name="period">
+            <option value="1d">1日後</option>
+            <option value="1w">1週間後</option>
+            <option value="1m">1か月後</option>
+            <option value="3m">3か月後</option>
+            <option value="6m">半年後</option>
+            <option value="1y">1年後</option>
+        </select><br><br>
+
+        <input type="submit" value="予測開始">
+    </form>
+</body>
+</html>
