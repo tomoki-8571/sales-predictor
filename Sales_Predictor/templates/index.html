@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>飲食店向け無料AI売上予測</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ヘッダー -->
+    <header>
+        <h1 class="main-title">飲食店向け無料AI売上予測</h1>
+        <nav>
+            <a href="#about">売上予測とは</a>
+        </nav>
+    </header>
+
+    <!-- メインビジュアル -->
+    <section class="hero">
+        <img src="images/main_visual.png" alt="AI×売上予測">
+    </section>
+
+    <!-- 予測フォーム -->
+    <section class="predict-form">
+        <h2>予測開始</h2>
+        <form action="/predict" method="post" enctype="multipart/form-data">
+            <label for="csvFile">CSVファイルをアップロード:</label>
+            <input type="file" id="csvFile" name="csv_file" accept=".csv" required><br>
+
+            <label for="period">予測期間を選択:</label>
+            <select id="period" name="period">
+                <option value="1day">1日</option>
+                <option value="1week">1週間</option>
+                <option value="1month">1か月</option>
+            </select>
+            <p class="note">※ 予測期間が延びるほど精度は低下する傾向があります。</p>
+
+            <button type="submit" class="start-btn">予測を開始する</button>
+        </form>
+    </section>
+
+    <!-- 売上予測とは（アンカーリンク先） -->
+    <section id="about" class="about">
+        <h2>売上予測とは</h2>
+        <p>
+            AIを活用することで、過去の売上データから未来の売上を自動で予測できます。
+            特に飲食店では天候や曜日、祝日など様々な要因が影響するため、人的な勘だけに頼らない予測が重要です。
+        </p>
+    </section>
+</body>
+</html>
