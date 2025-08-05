@@ -1,0 +1,107 @@
+/* 全体の基本スタイル */
+body {
+    font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f8fb;
+    color: #333;
+}
+
+/* ヘッダー部分 */
+header {
+    background-color: #003366;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    background-image: url('/static/images/header_background.png');
+    background-size: cover;
+    background-position: center;
+}
+
+/* タイトル */
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+    font-weight: bold;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+}
+
+/* ナビゲーションリンク */
+nav {
+    text-align: center;
+    margin-top: 15px;
+}
+nav a {
+    color: #ffffff;
+    font-weight: bold;
+    margin: 0 15px;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+}
+nav a:hover {
+    border-color: #ffffff;
+}
+
+/* メインセクション */
+main {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* セクションタイトル */
+section h2 {
+    font-size: 1.8em;
+    color: #003366;
+    margin-bottom: 10px;
+}
+
+/* ファイル選択と説明 */
+section label, section select, section input[type="file"] {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 1em;
+}
+
+/* 注意書き */
+.warning {
+    font-size: 0.9em;
+    color: #cc0000;
+    margin-top: -10px;
+    margin-bottom: 20px;
+}
+
+/* 開始ボタンを目立たせる */
+button {
+    background-color: #ff6600;
+    color: white;
+    font-weight: bold;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2em;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+button:hover {
+    background-color: #e65c00;
+}
+
+/* 売上予測とはセクション */
+#about {
+    margin-top: 60px;
+    background-color: #e6f0ff;
+    padding: 30px;
+    border-radius: 10px;
+}
+#about h2 {
+    margin-top: 0;
+}
+
+/* 画像スタイル */
+.image-section img {
+    max-width: 100%;
+    margin: 20px 0;
+    border-radius: 10px;
+}
