@@ -1,0 +1,203 @@
+:root {
+  --red: #e60012;
+  --gray: #666;
+  --light: #f4f4f4;
+  --dark: #222;
+  --font-main: 'Noto Sans JP', 'Segoe UI', 'Helvetica Neue', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-main);
+  background: #fff;
+  color: var(--dark);
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 2rem;
+}
+
+/* 最上部のキャッチコピー */
+.top-banner {
+  background-color: var(--red);
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.hero-headline {
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* ヘッダー */
+.site-header {
+  background: #fff;
+  border-bottom: 2px solid var(--red);
+  padding: 1rem 0;
+}
+
+.logo {
+  font-size: 1.5rem;
+  color: var(--red);
+  font-weight: bold;
+}
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  justify-content: flex-end;
+}
+
+.main-nav a {
+  color: var(--gray);
+  text-decoration: none;
+}
+
+.main-nav a:hover {
+  color: var(--red);
+}
+
+/* ヒーロー画像セクション */
+.hero {
+  position: relative;
+  text-align: center;
+  background-color: #fff0f0;
+}
+
+.hero-img {
+  width: 100%;
+  height: auto;
+}
+
+/* ヒーロー画像の下にキャッチコピー群 */
+.hero-caption {
+  background: white;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.lead-text {
+  font-size: 1.3rem;
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+
+.title-text {
+  font-size: 2.8rem;
+  color: #000;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.sub-text {
+  font-size: 1rem;
+  color: #444;
+}
+
+/* セクション全体共通 */
+.section {
+  padding: 4rem 0;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.section-title.red {
+  color: var(--red);
+}
+
+.section-title.gray {
+  color: var(--gray);
+}
+
+.light-bg {
+  background-color: var(--light);
+}
+
+/* CSVアップロード */
+.upload-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.sample-img {
+  max-width: 100%;
+  margin-top: 1rem;
+  border: 1px solid #ccc;
+}
+
+.csv-caption {
+  margin: 1rem 0 0.5rem;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+/* ボタン */
+.btn {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 0.3rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.primary {
+  background: var(--red);
+  color: white;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+/* 特徴リスト */
+.feature-list {
+  list-style: none;
+  padding-left: 1rem;
+}
+
+.feature-list li {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+/* フッター */
+.site-footer {
+  text-align: center;
+  padding: 2rem 0;
+  background-color: var(--light);
+  color: var(--gray);
+  font-size: 0.9rem;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 768px) {
+  .main-nav ul {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+
+  .hero-headline {
+    font-size: 1.8rem;
+  }
+
+  .title-text {
+    font-size: 2rem;
+  }
+}
